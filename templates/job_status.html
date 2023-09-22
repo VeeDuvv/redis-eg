@@ -3,6 +3,15 @@
 
 <head>
     <title>Job Status</title>
+    <script>
+        function refreshPage() {
+            var status = "{{ status }}";
+            if (status !== "finished") {
+                location.reload();
+            }
+        }
+        setTimeout(refreshPage, 5000); // refresh every 5 seconds
+    </script>
 </head>
 
 <body>
