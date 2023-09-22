@@ -1,8 +1,8 @@
 import time
 import requests
+from app_factory import create_app
 
-import time
-import requests
+app = create_app()
 
 
 def background_task(name, app):

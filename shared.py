@@ -1,4 +1,5 @@
 # shared.py
+# purpose of this file is to initialize the redis queue
 
 from redis import Redis
 from rq import Queue
